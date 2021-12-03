@@ -146,6 +146,13 @@ div.fa-user-friends::before {
   stroke-width: 5;
 }
 
+@media (max-width: 767px) {
+
+  .tour-overlay .highlight-rect {
+    stroke-width: 10;
+  }
+}
+
 div#driver-highlighted-element-stage {
   opacity: 0;
 }
@@ -271,6 +278,12 @@ div.video-container-container {
   max-width: 640px;
 }
 
+/* Add vertical whitespace after videos when followed by text */
+
+div.video-container-container + p {
+  margin-top: 1em;
+}
+
 /* Style for adding icons to the installers table */
 
 table.installer-table td {
@@ -299,6 +312,13 @@ table.installer-table tbody td:nth-child(2) p::before {
   font-size: 2em;
   padding-right: 0.5em;
   vertical-align: sub;
+}
+
+@media screen and (max-width: 991px) {
+
+  table.installer-table td {
+    display: block;
+  }
 }
 
 /* Style for links added to dropdowns */

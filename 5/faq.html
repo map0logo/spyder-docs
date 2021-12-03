@@ -29,7 +29,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Submit a Report" href="troubleshooting/submit-a-report.html" />
+    <link rel="prev" title="Scientific Computing and Visualization with Spyder" href="workshops/scientific-computing.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -39,6 +39,9 @@
   </head>
   <body data-spy="scroll" data-target="" data-offset="60" style="font-size=16px">
     
+
+    
+
     <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar py-0" id="navbar-main">
 <div class="container">
   
@@ -239,6 +242,27 @@
               <details>
               
                 <summary>
+                    Spyder Plugins
+                </summary>
+                <ul class="nav">
+                
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="plugins/terminal.html">Spyder Terminal</a>
+                        </li>
+                    
+                  
+                </ul>
+              </details>
+            </li>
+        
+      
+       
+            <li class="nav-item ">
+              
+              <details>
+              
+                <summary>
                     Troubleshooting
                 </summary>
                 <ul class="nav">
@@ -276,6 +300,45 @@
                     
                         <li class="nav-item sub-nav-item ">
                             <a href="troubleshooting/submit-a-report.html">Submit a Report</a>
+                        </li>
+                    
+                  
+                </ul>
+              </details>
+            </li>
+        
+      
+       
+            <li class="nav-item ">
+              
+              <details>
+              
+                <summary>
+                    Workshops
+                </summary>
+                <ul class="nav">
+                
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/financial.html">Financial Data Analysis with Spyder</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/plugin-development.html">Plugin Development with Spyder</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/qt_fundamentals.html">Qt Fundamentals</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/scientific-computing.html">Scientific Computing and Visualization with Spyder</a>
                         </li>
                     
                   
@@ -400,6 +463,16 @@
           
         
           
+            <optgroup label="Spyder Plugins">
+              
+                <option value="plugins/terminal.html">
+                  Spyder Terminal
+                </option>
+              
+            </optgroup>
+          
+        
+          
             <optgroup label="Troubleshooting">
               
                 <option value="troubleshooting/first-steps.html">
@@ -424,6 +497,28 @@
               
                 <option value="troubleshooting/submit-a-report.html">
                   Submit a Report
+                </option>
+              
+            </optgroup>
+          
+        
+          
+            <optgroup label="Workshops">
+              
+                <option value="workshops/financial.html">
+                  Financial Data Analysis with Spyder
+                </option>
+              
+                <option value="workshops/plugin-development.html">
+                  Plugin Development with Spyder
+                </option>
+              
+                <option value="workshops/qt_fundamentals.html">
+                  Qt Fundamentals
+                </option>
+              
+                <option value="workshops/scientific-computing.html">
+                  Scientific Computing and Visualization with Spyder
                 </option>
               
             </optgroup>
@@ -457,6 +552,33 @@ Q: How do I install Spyder?<div class="summary-down docutils">
 <p class="card-text">The easiest way to install Spyder is with the Anaconda Python distribution, which comes with everything you need to get started in an all-in-one package.
 Download it from its <a class="reference external" href="https://www.anaconda.com/products/individual">webpage</a>.</p>
 <p class="card-text">For more information, visit our <a class="reference internal" href="installation.html"><span class="doc">Installation Guide</span></a>.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3 dropdown-id-install-wsl2">
+<summary class="summary-title card-header">
+Q: How do I install Spyder on Windows Subsystem for Linux 2 (WSL2)?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">If you already installed Spyder on your Windows machine, you do not need to reinstall it on a WSL2-based Linux environment if your code must run there.</p>
+<p class="card-text">Instead, just install <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> inside WSL2 and create a new conda environment (or use an existing conda- or virtualenv), then install Spyder-Kernels into that environment with e.g. <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">spyder-kernels</span></code>.
+You must manually install <code class="docutils literal notranslate"><span class="pre">ipython_genutils</span></code> with e.g. <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">ipython_genutils</span></code>.</p>
+<div class="alert alert-info">
+<p class="admonition-title">Note</p>
+<p class="card-text">Windows creates a network path located at <code class="docutils literal notranslate"><span class="pre">\\wsl$</span></code> that points to the partitions of your WSL2 machines, e.g. <code class="docutils literal notranslate"><span class="pre">\\wsl$\Ubuntu-20.04</span></code>.
+You <strong>must</strong> map a network drive letter to your machine path, e.g. <code class="docutils literal notranslate"><span class="pre">W:</span></code>, for Spyder to correctly see its files and folders.</p>
+</div>
+<p class="card-text">To start a Spyder kernel, from your Linux terminal run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m spyder_kernels.console --matplotlib<span class="o">=</span><span class="s2">&quot;inline&quot;</span> --ip<span class="o">=</span><span class="m">127</span>.0.0.1 -f<span class="o">=</span>~/remotemachine.json <span class="p">&amp;</span>
+</pre></div>
+</div>
+<p class="card-text">It will run the kernel as a subprocess and create a file named <code class="file docutils literal notranslate"><span class="pre">remotemachine.json</span></code> in your WSL home folder.</p>
+<p class="card-text">Finally, under the options menu of Spyder’s <a class="reference internal" href="panes/ipythonconsole.html"><span class="doc">IPython Console</span></a>, select <span class="guilabel">Connect to an existing kernel</span> as described in <a class="reference internal" href="panes/ipythonconsole.html#connecting-external-kernel"><span class="std std-ref">Using external kernels</span></a>.
+Insert the absolute path of <code class="file docutils literal notranslate"><span class="pre">remotemachine.json</span></code> into the <span class="guilabel">Connection file</span> field.
+If you mapped <code class="docutils literal notranslate"><span class="pre">W:</span></code> as mentioned in above note, the path should be <code class="file docutils literal notranslate"><span class="pre">W:/home/</span><em><span class="pre">username</span></em><span class="pre">/remotemachine.json</span></code>.
+A new console will open in Spyder, running in the Linux environment.
+Try running <code class="docutils literal notranslate"><span class="pre">os.system('ls</span> <span class="pre">-la')</span></code> and see if it lists your WSL home folder.
+If you run <code class="docutils literal notranslate"><span class="pre">exit()</span></code> from Spyder, the kernel running on Linux will be stopped.</p>
 </div>
 </details><details class="sphinx-bs dropdown card mb-3 dropdown-id-update-conda">
 <summary class="summary-title card-header">
@@ -580,10 +702,10 @@ Q: How do I run Spyder installed in a conda environment using the command line?<
 </div>
 </details></div>
 <div class="section" id="using-spyder">
-<h2>Using Spyder<a class="headerlink" href="#using-spyder" title="Permalink to this headline">¶</a></h2>
+<span id="using-spyder-faqs-ref"></span><h2>Using Spyder<a class="headerlink" href="#using-spyder" title="Permalink to this headline">¶</a></h2>
 <details class="sphinx-bs dropdown card mb-3 dropdown-id-using-install-packages">
 <summary class="summary-title card-header">
-Q: How do I install Python packages to use within Spyder?<div class="summary-down docutils">
+Q: How do I install Python packages to use within Spyder if I installed Spyder with conda?<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -610,6 +732,76 @@ Here, select the option <span class="guilabel">Use the following Python interpre
 If its not listed, use the text box or the <span class="guilabel">Select file</span> button to enter the path to the Python interepreter you want to use.
 See the <a class="reference internal" href="panes/ipythonconsole.html"><span class="doc">IPython Console</span></a> for more information.</p>
 <img alt="Preferences showing changing Python interpreter" src="_images/faq-python-interpreter.png" />
+<p class="card-text">Click <span class="guilabel">Restart kernel</span> in the <span class="guilabel">Consoles</span> menu for this change to take effect.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3 dropdown-id-using-packages-installer">
+<summary class="summary-title card-header">
+Q: How do I install Python packages to use within Spyder if I downloaded Spyder from the standalone installers?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Watch our video on using additional modules or follow the instructions below it.</p>
+<div class="video-container-container"><div class="video-container"><iframe src="https://www.youtube.com/embed/i7Njb3xO4Fw?start=306" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen class="align-left"></iframe></div></div><p class="card-text">If you want to use other modules in Spyder that don’t come with our installer, you need to install <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> (<strong>only if you don’t have Anaconda or Miniconda yet!</strong>).
+For Spyder to recognize it, the installation should be done in one of the following default paths:</p>
+<table class="table">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="card-text">Windows</p></th>
+<th class="head"><p class="card-text">macOS</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="card-text">C:\Users\&lt;username&gt;\Anaconda</p></td>
+<td><p class="card-text">/Users/&lt;username&gt;/opt/anaconda</p></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text">C:\Users\&lt;username&gt;\Miniconda</p></td>
+<td><p class="card-text">/Users/&lt;username&gt;/opt/miniconda</p></td>
+</tr>
+<tr class="row-even"><td><p class="card-text">C:\Users\&lt;username&gt;\Anaconda3</p></td>
+<td><p class="card-text">/Users/&lt;username&gt;/opt/anaconda3</p></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text">C:\Users\&lt;username&gt;\Miniconda3</p></td>
+<td><p class="card-text">/Users/&lt;username&gt;/opt/miniconda3</p></td>
+</tr>
+<tr class="row-even"><td><p class="card-text">C:\Anaconda</p></td>
+<td><p class="card-text">/opt/anaconda</p></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text">C:\Miniconda</p></td>
+<td><p class="card-text">/opt/miniconda</p></td>
+</tr>
+<tr class="row-even"><td><p class="card-text">C:\Anaconda3</p></td>
+<td><p class="card-text">/opt/anaconda3</p></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text">C:\Miniconda3</p></td>
+<td><p class="card-text">/opt/miniconda3</p></td>
+</tr>
+<tr class="row-even"><td><p class="card-text">C:\ProgramData\Anaconda</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text">C:\ProgramData\Miniconda</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p class="card-text">C:\ProgramData\Anaconda3</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text">C:\ProgramData\Miniconda3</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="card-text">Then, you need to create a new conda environment with the modules that you want to use with Spyder and include <code class="docutils literal notranslate"><span class="pre">spyder-kernels</span></code> in it. For example, if you want to use <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>, open your terminal or the Anaconda prompt on Windows and run the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n spyder-env -y
+conda activate spyder-env
+conda install spyder-kernels scikit-learn -y
+</pre></div>
+</div>
+<p class="card-text">Finally, you need to connect Spyder to this environment by changing Spyder’s default Python interpreter. To do this, click the name of the current environment in the status bar, and then click <span class="guilabel">Change default environment in Preferences</span>.</p>
+<p class="card-text">This will open the <span class="guilabel">Preferences</span> dialog in the <span class="guilabel">Python interpreter</span> section. Here, select the option <span class="guilabel">Use the following Python interpreter</span>, and use the dropdown below to select your preferred environment. If it is not listed, use the text box or the <span class="guilabel">Select file</span> button to enter the path to the Python interpreter you want to use.</p>
+<p class="card-text"><strong>Your new environment will only be listed here if you installed Miniconda (or Anaconda) in the default path as shown in the table above.</strong></p>
 <p class="card-text">Click <span class="guilabel">Restart kernel</span> in the <span class="guilabel">Consoles</span> menu for this change to take effect.</p>
 </div>
 </details><details class="sphinx-bs dropdown card mb-3 dropdown-id-using-reset-prefs">
@@ -840,7 +1032,7 @@ For more, see our <a class="reference internal" href="installation.html"><span c
               
               <div class='prev-next-bottom'>
                 
-    <a class='prev-next-link left-prev' id="prev-next-link prev-link" href="troubleshooting/submit-a-report.html" title="previous page"><span class="fas fa-chevron-left"></span><span class="fas fa-chevron-left"></span> Submit a Report</a>
+    <a class='prev-next-link left-prev' id="prev-next-link prev-link" href="workshops/scientific-computing.html" title="previous page"><span class="fas fa-chevron-left"></span><span class="fas fa-chevron-left"></span> Scientific Computing and Visualization with Spyder</a>
 
               </div>
               

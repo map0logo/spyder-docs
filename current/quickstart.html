@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quickstart &#8212; Spyder 4 documentation</title>
+    <title>Quickstart &#8212; Spyder 5 documentation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -40,6 +40,9 @@
   </head>
   <body data-spy="scroll" data-target="" data-offset="60" style="font-size=16px">
     
+
+    
+
     <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar py-0" id="navbar-main">
 <div class="container">
   
@@ -73,9 +76,9 @@
 <div class="d-none d-xl-block">
 <h4 id="versions-header">Version</h4>
 <select id="select-versions">
-  <option value="../5/quickstart.html">Spyder 5</option>
+  <option value="quickstart.html" selected>Spyder 5</option>
   <option value="../3/index.html">Spyder 3</option>
-  <option value="quickstart.html" selected>Spyder 4</option>
+  <option value="../4/quickstart.html">Spyder 4</option>
 </select>
 
   <form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -240,6 +243,27 @@
               <details>
               
                 <summary>
+                    Spyder Plugins
+                </summary>
+                <ul class="nav">
+                
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="plugins/terminal.html">Spyder Terminal</a>
+                        </li>
+                    
+                  
+                </ul>
+              </details>
+            </li>
+        
+      
+       
+            <li class="nav-item ">
+              
+              <details>
+              
+                <summary>
                     Troubleshooting
                 </summary>
                 <ul class="nav">
@@ -287,6 +311,45 @@
       
        
             <li class="nav-item ">
+              
+              <details>
+              
+                <summary>
+                    Workshops
+                </summary>
+                <ul class="nav">
+                
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/financial.html">Financial Data Analysis with Spyder</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/plugin-development.html">Plugin Development with Spyder</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/qt_fundamentals.html">Qt Fundamentals</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="workshops/scientific-computing.html">Scientific Computing and Visualization with Spyder</a>
+                        </li>
+                    
+                  
+                </ul>
+              </details>
+            </li>
+        
+      
+       
+            <li class="nav-item ">
               <a class="nav-link" href="faq.html">FAQ</a>
             </li>
         
@@ -299,9 +362,9 @@
           <div class="bd-toc-item active row px-3">
 <h4 id="versions-header">Version</h4>
 <select id="select-versions">
-  <option value="../5/quickstart.html">Spyder 5</option>
+  <option value="quickstart.html" selected>Spyder 5</option>
   <option value="../3/index.html">Spyder 3</option>
-  <option value="quickstart.html" selected>Spyder 4</option>
+  <option value="../4/quickstart.html">Spyder 4</option>
 </select>
 
           </div>
@@ -401,6 +464,16 @@
           
         
           
+            <optgroup label="Spyder Plugins">
+              
+                <option value="plugins/terminal.html">
+                  Spyder Terminal
+                </option>
+              
+            </optgroup>
+          
+        
+          
             <optgroup label="Troubleshooting">
               
                 <option value="troubleshooting/first-steps.html">
@@ -431,6 +504,28 @@
           
         
           
+            <optgroup label="Workshops">
+              
+                <option value="workshops/financial.html">
+                  Financial Data Analysis with Spyder
+                </option>
+              
+                <option value="workshops/plugin-development.html">
+                  Plugin Development with Spyder
+                </option>
+              
+                <option value="workshops/qt_fundamentals.html">
+                  Qt Fundamentals
+                </option>
+              
+                <option value="workshops/scientific-computing.html">
+                  Scientific Computing and Visualization with Spyder
+                </option>
+              
+            </optgroup>
+          
+        
+          
               <option value="faq.html">
               FAQ
               </option>
@@ -451,31 +546,31 @@ Here you will find an interactive tour that will guide you through Spyder’s in
 You’ll get familiar with the most important parts of the IDE, especially those we’ll be mentioning throughout our docs.
 Finally, you’ll get to walk through some of Spyder’s key panes and functionality.</p>
 <div class="interactive-tour-container">
-   <img id="tour-default-layout-main" class="tour-screenshot tour-screenshot-active" src="_static/images/tour/default-layout-main.png">
-   <img id="tour-options-menu" class="tour-screenshot" src="_static/images/tour/options-menu.png">
-   <img id="tour-context-menu" class="tour-screenshot" src="_static/images/tour/context-menu.png">
-   <img id="tour-variable-explorer" class="tour-screenshot" src="_static/images/tour/variable-explorer.png">
-   <img id="tour-plots" class="tour-screenshot" src="_static/images/tour/plots.png">
-   <img id="tour-files" class="tour-screenshot" src="_static/images/tour/files.png">
-   <img id="tour-find" class="tour-screenshot" src="_static/images/tour/find.png">
-   <img id="tour-profiler" class="tour-screenshot" src="_static/images/tour/profiler.png">
-   <img id="tour-code-analysis" class="tour-screenshot" src="_static/images/tour/code-analysis.png">
+   <img id="tour-default-layout-main" class="tour-screenshot tour-screenshot-active" src="assets/5/tour/tour-default-layout-main.png">
+   <img id="tour-options-menu" class="tour-screenshot" src="assets/5/tour/tour-options-menu.png">
+   <img id="tour-context-menu" class="tour-screenshot" src="assets/5/tour/tour-context-menu.png">
+   <img id="tour-variable-explorer" class="tour-screenshot" src="assets/5/tour/tour-variable-explorer.png">
+   <img id="tour-plots" class="tour-screenshot" src="assets/5/tour/tour-plots.png">
+   <img id="tour-files" class="tour-screenshot" src="assets/5/tour/tour-files.png">
+   <img id="tour-find" class="tour-screenshot" src="assets/5/tour/tour-find.png">
+   <img id="tour-profiler" class="tour-screenshot" src="assets/5/tour/tour-profiler.png">
+   <img id="tour-code-analysis" class="tour-screenshot" src="assets/5/tour/tour-code-analysis.png">
 
    <svg class="tour-overlay" viewBox="0 0 1280 720">
      <rect id="introduction-rect" class="highlight-rect tour-default-layout-main" x="2.5" y="2.5" width="1275.5" height="715" />
-     <rect id="toolbar-rect" class="highlight-rect tour-default-layout-main" x="2.5" y="2.5" width="1275.5" height="35" />
-     <rect id="statusbar-rect" class="highlight-rect tour-default-layout-main" x="2.5" y="688" width="1275.5" height="30" />
-     <rect id="options-menu-rect" class="highlight-rect tour-options-menu" x="612" y="60" width="245" height="405" />
-     <rect id="context-menu-rect" class="highlight-rect tour-context-menu" x="214" y="240" width="276" height="405" />
-     <rect id="editor-rect" class="highlight-rect tour-default-layout-main" x="2.5" y="35" width="635" height="655" />
-     <rect id="console-rect" class="highlight-rect tour-default-layout-main" x="640" y="335" width="638" height="358" />
-     <rect id="help-rect" class="highlight-rect tour-default-layout-main" x="640" y="35" width="638" height="305" />
-     <rect id="variable-explorer-rect" class="highlight-rect tour-variable-explorer" x="640" y="35" width="638" height="305" />
-     <rect id="plots-rect" class="highlight-rect tour-plots" x="640" y="35" width="638" height="305" />
-     <rect id="files-rect" class="highlight-rect tour-files" x="640" y="35" width="638" height="305" />
-     <rect id="find-rect" class="highlight-rect tour-find" x="640" y="35" width="638" height="305" />
-     <rect id="profiler-rect" class="highlight-rect tour-profiler" x="640" y="35" width="638" height="305" />
-     <rect id="code-analysis-rect" class="highlight-rect tour-code-analysis" x="640" y="35" width="638" height="305" />
+     <rect id="toolbar-rect" class="highlight-rect tour-default-layout-main" x="2.5" y="2.5" width="1275.5" height="45" />
+     <rect id="statusbar-rect" class="highlight-rect tour-default-layout-main" x="2.5" y="695" width="1275.5" height="23" />
+     <rect id="options-menu-rect" class="highlight-rect tour-options-menu" x="595" y="76" width="245" height="490" />
+     <rect id="context-menu-rect" class="highlight-rect tour-context-menu" x="82" y="128" width="276" height="510" />
+     <rect id="editor-rect" class="highlight-rect tour-default-layout-main" x="2.5" y="45" width="635" height="653" />
+     <rect id="console-rect" class="highlight-rect tour-default-layout-main" x="640" y="370" width="638" height="327" />
+     <rect id="help-rect" class="highlight-rect tour-default-layout-main" x="640" y="48" width="638" height="322" />
+     <rect id="variable-explorer-rect" class="highlight-rect tour-variable-explorer" x="640" y="48" width="638" height="322" />
+     <rect id="plots-rect" class="highlight-rect tour-plots" x="640" y="48" width="638" height="322" />
+     <rect id="files-rect" class="highlight-rect tour-files" x="640" y="48" width="638" height="322" />
+     <rect id="find-rect" class="highlight-rect tour-find" x="640" y="48" width="638" height="322" />
+     <rect id="profiler-rect" class="highlight-rect tour-profiler" x="640" y="48" width="638" height="322" />
+     <rect id="code-analysis-rect" class="highlight-rect tour-code-analysis" x="640" y="48" width="638" height="322" />
    </svg>
 </div>
 <input id="quickstart-tour-start" type="button" value="Restart Tour" /></div>

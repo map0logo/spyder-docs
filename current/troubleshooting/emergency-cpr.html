@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emergency CPR &#8212; Spyder 4 documentation</title>
+    <title>Emergency CPR &#8212; Spyder 5 documentation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -40,6 +40,9 @@
   </head>
   <body data-spy="scroll" data-target="" data-offset="60" style="font-size=16px">
     
+
+    
+
     <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar py-0" id="navbar-main">
 <div class="container">
   
@@ -73,9 +76,9 @@
 <div class="d-none d-xl-block">
 <h4 id="versions-header">Version</h4>
 <select id="select-versions">
-  <option value="../../5/troubleshooting/emergency-cpr.html">Spyder 5</option>
+  <option value="emergency-cpr.html" selected>Spyder 5</option>
   <option value="../../3/index.html">Spyder 3</option>
-  <option value="emergency-cpr.html" selected>Spyder 4</option>
+  <option value="../../4/troubleshooting/emergency-cpr.html">Spyder 4</option>
 </select>
 
   <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -235,6 +238,27 @@
         
       
        
+            <li class="nav-item ">
+              
+              <details>
+              
+                <summary>
+                    Spyder Plugins
+                </summary>
+                <ul class="nav">
+                
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="../plugins/terminal.html">Spyder Terminal</a>
+                        </li>
+                    
+                  
+                </ul>
+              </details>
+            </li>
+        
+      
+       
             <li class="nav-item active">
                           
               <details open>
@@ -287,6 +311,45 @@
       
        
             <li class="nav-item ">
+              
+              <details>
+              
+                <summary>
+                    Workshops
+                </summary>
+                <ul class="nav">
+                
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="../workshops/financial.html">Financial Data Analysis with Spyder</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="../workshops/plugin-development.html">Plugin Development with Spyder</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="../workshops/qt_fundamentals.html">Qt Fundamentals</a>
+                        </li>
+                    
+                  
+                    
+                        <li class="nav-item sub-nav-item ">
+                            <a href="../workshops/scientific-computing.html">Scientific Computing and Visualization with Spyder</a>
+                        </li>
+                    
+                  
+                </ul>
+              </details>
+            </li>
+        
+      
+       
+            <li class="nav-item ">
               <a class="nav-link" href="../faq.html">FAQ</a>
             </li>
         
@@ -299,9 +362,9 @@
           <div class="bd-toc-item active row px-3">
 <h4 id="versions-header">Version</h4>
 <select id="select-versions">
-  <option value="../../5/troubleshooting/emergency-cpr.html">Spyder 5</option>
+  <option value="emergency-cpr.html" selected>Spyder 5</option>
   <option value="../../3/index.html">Spyder 3</option>
-  <option value="emergency-cpr.html" selected>Spyder 4</option>
+  <option value="../../4/troubleshooting/emergency-cpr.html">Spyder 4</option>
 </select>
 
           </div>
@@ -401,6 +464,16 @@
           
         
           
+            <optgroup label="Spyder Plugins">
+              
+                <option value="../plugins/terminal.html">
+                  Spyder Terminal
+                </option>
+              
+            </optgroup>
+          
+        
+          
             <optgroup label="Troubleshooting">
               
                 <option value="first-steps.html">
@@ -431,6 +504,28 @@
           
         
           
+            <optgroup label="Workshops">
+              
+                <option value="../workshops/financial.html">
+                  Financial Data Analysis with Spyder
+                </option>
+              
+                <option value="../workshops/plugin-development.html">
+                  Plugin Development with Spyder
+                </option>
+              
+                <option value="../workshops/qt_fundamentals.html">
+                  Qt Fundamentals
+                </option>
+              
+                <option value="../workshops/scientific-computing.html">
+                  Scientific Computing and Visualization with Spyder
+                </option>
+              
+            </optgroup>
+          
+        
+          
               <option value="../faq.html">
               FAQ
               </option>
@@ -452,7 +547,7 @@ The steps on this section should hopefully get it back up and running in no time
 <h2>Common solutions<a class="headerlink" href="#common-solutions" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p>Try <a class="reference internal" href="basic-first-aid.html"><span class="doc">Basic First Aid</span></a> first, which usually resolves most Spyder install-related issues.</p></li>
-<li><p><strong>Make sure Spyder isn’t already running</strong> and no Spyder related windows (<em>e.g.</em> :doc:variableexplorer dialogs) are left open, and check that the preference setting <span class="menuselection">General ‣ Advanced Settings ‣ Use a single instance</span> isn’t checked.</p>
+<li><p><strong>Make sure Spyder isn’t already running</strong> and no Spyder related windows (<em>e.g.</em> :doc:variableexplorer dialogs) are left open, and check that the preference setting <span class="menuselection">Application ‣ Advanced Settings ‣ Use a single instance</span> isn’t checked.</p>
 <img alt="Spyder showing Use a single instance setting" src="../_images/emergency-cpr-single-instance.png" />
 </li>
 <li><p>Try <strong>starting Spyder via a different means</strong>, such as from a shortcut, Anaconda navigator, or your command line (or Anaconda Prompt on Windows) by simply typing <code class="docutils literal notranslate"><span class="pre">spyder</span></code> then <kbd class="kbd docutils literal notranslate">Enter</kbd>/<kbd class="kbd docutils literal notranslate">Return</kbd>, and see if any of those work.
